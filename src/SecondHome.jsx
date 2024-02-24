@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import Task from './Task';
  function SecondHome() {
         const initialArray=localStorage.getItem("tasks")
@@ -12,6 +12,8 @@ import Task from './Task';
         e.preventDefault();
         setTasks([...tasks,{title,description}]);
         localStorage.setItem("tasks",JSON.stringify(tasks));
+        setTitle("");
+        setDescription("");
     };
 const deleteTask=(index)=>{
 const filteredArr=tasks.filter((val,i)=>{
@@ -20,6 +22,9 @@ const filteredArr=tasks.filter((val,i)=>{
 console.log(filteredArr);
 setTasks(filteredArr);
 };
+useEffect(()=>{
+ localStorage.setItem("tasks",JSON.stringify(tasks));
+},[tasks]);
     return (
     <div className='container'>
     <h1>Daily Goals</h1>
