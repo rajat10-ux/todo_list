@@ -37,14 +37,15 @@ input,textarea,button{
 button{
   cursor: pointer;
   border: none;
-  background-color: rgb(34, 2, 8);
+  background-color: black;
   color:white;
 }
 .task{
   border: solid red 1px;
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: black;
+  color:white;
   padding: 10px;
   margin: 10px;
 }
