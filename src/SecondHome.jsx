@@ -27,7 +27,7 @@ useEffect(()=>{
 },[tasks]);
     return (
     <div className='container'>
- 
+ <h1>Tasks</h1>
       <form onSubmit={submitHandler}>
         <input 
         type='text'
