@@ -35,11 +35,12 @@ button{
   color:white;
 }
 .task{
-  border: solid red 1px;
   display: flex;
   align-items: center;
   background-color: white;
   padding: 10px;
+  color:black;
+  border:solid orange 1px;
   margin: 10px;
 }
 .task>div{
