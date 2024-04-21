@@ -25,7 +25,7 @@ console.log("run");
   return (
     <div>
       <input 
-      style={{padding:20,border:"2px solid black"}}
+      style={{padding:20,border:"2px solid white"}}
       type="number"
       placeholder="enter something"
        value={inputValue} 
