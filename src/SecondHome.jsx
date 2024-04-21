@@ -31,12 +31,12 @@ useEffect(()=>{
       <form onSubmit={submitHandler}>
         <input 
         type='text'
-         placeholder='title'
+         placeholder='Title'
           value={title}
            onChange={(e)=>setTitle(e.target.value)}
             />
         <textarea 
-        placeholder='description'
+        placeholder='Description'
         value={description}
         onChange={(e)=>setDescription(e.target.value)}
         ></textarea>
