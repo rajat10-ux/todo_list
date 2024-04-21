@@ -34,12 +34,14 @@ useEffect(()=>{
          placeholder='Title'
           value={title}
            onChange={(e)=>setTitle(e.target.value)}
+         required
             />
         <textarea 
         placeholder='Description'
         value={description}
         onChange={(e)=>setDescription(e.target.value)}
-        ></textarea>
+         required
+         ></textarea>
         <button type='submit'>ADD</button>
       </form>
       {/* // use of currly brcketr needets to return word so //use () this bracklet */}
